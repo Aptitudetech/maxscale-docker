@@ -29,7 +29,7 @@ RUN dnf clean expire-cache && \
     wget
 
 # Copy Files To Image
-#COPY config/maxscale.cnf /etc/
+COPY config/maxscale.cnf /etc/
 
 COPY config/monit.d/ /etc/monit.d/
 
